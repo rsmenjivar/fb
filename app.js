@@ -10,19 +10,19 @@ $(document).ready(function(){
 	for (var i = 1; i <= number; i++) {
 
 		if ( ((i % 3) === 0) && (( i % 5 ) === 0) ) {
-  			$("fizzbuzz").append("fizzbuzz");
+  			$("#fb").append("fizzbuzz");
 		}
 		else if ( (i % 3) === 0) {
-  			$("fizzbuzz").append("buzz");
+  			$("#fb").append("buzz");
 		}
 		else if ( (i % 5) === 0 ) {
-  			$("fizzbuzz").append("fizz");
+  			$("#fb").append("fizz");
 		}
 		else {
-			$("fizzbuzz").append(i);
+			$("#fb").append(i);
 		}
 
-		$('fizzbuzz').append('<br />');
+		$('#fb').append('<br />');
 	}
 	}
 
